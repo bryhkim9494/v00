@@ -6,7 +6,7 @@ const BlueDiv = styled.div`
 
 const ProductDetail = ({product}) => {
 
-    const {pno, pname, price} = product
+    const {pno, pname, price,imgFile} = product
 
     
     return ( 
@@ -14,6 +14,7 @@ const ProductDetail = ({product}) => {
             <BlueDiv>PNO {pno}</BlueDiv>
             <div>NAME {pname}</div>
             <div>{price}</div>
+            <div><img src={require(`../../img/${imgFile}`)}/></div>
             <button>BUY</button>
 
         </li>
